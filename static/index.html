@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>DockerManager</title>
+</head>
+<header>
+    <nav class="nav-head">
+        <div class="navlist">
+            <h1>DockerManager</h1>
+            <h2><img width=60px src="/assets/img/Moby-logo (1).png"></h2>
+        </div>
+    </nav>
+</header>
+<body>
+    <section class="main-card">
+        <div id="return_str"></div>
+        <div class="card-button">
+            <button class="btn" onclick="DeleteAllContainers()" type="button">Delete All Container</button>
+            <button class="btn" onclick="DeleteAllImages()" type="button">Delete All Images</button>
+            <input class="inputStyle" type="text" id="inputPull" placeholder="repo/name">
+            <button class="btn" onclick="PullImage()" type="button">Pull Docker Image</button>
+        </div>
+        <div class="allmanager">
+            <div class="managerdocker">
+                <h3>Docker images pulled : </h3>
+                <div id="images-list"></div>
+            </div>
+            <div class="imagemanager"> 
+                <h3>Running Containers : </h3>
+                <div id="containers-list"></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+</html>

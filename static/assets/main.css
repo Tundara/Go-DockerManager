@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@media (min-width: 900px) {
+    body {
+        font-family: "Raleway", "Sans-serif";
+        margin: 0;
+    }
+    
+    h1 {
+        padding: 10px;
+        font-weight: bold;
+    }
+    
+    .nav-head {
+        background-color: rgb(199, 235, 255);
+        padding: 0px 0px 0px 0px;
+        height: 90px;
+    }
+    
+    .main-card {
+        padding: 20px;
+        margin: 40px;
+        background-color: rgb(233, 245, 252);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    }
+    
+    .allmanager {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card-button {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn {
+        padding: 5px;
+        margin-right: 10px;
+        background-color: rgb(119, 202, 250);
+        border:none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    .btnitems {
+        padding: 7px;
+        background-color: rgb(44, 178, 255);
+        width: 90px;
+        border: none;
+        margin-top: 7px;
+        cursor: pointer;
+        border-radius: 3px;
+        margin-left: 5px;
+    }
+    
+    .navlist {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0px 0px 0px 15px;
+    }
+    
+    .inputStyle {
+        height: 30px;
+        width: 100px;
+        margin-left: 20px;
+        border: none;
+        text-align: center;
+    }
+    
+    .imglist {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listimgitem {
+        width: 95%;
+        margin-bottom: 15px;
+        border: black;
+        background-color: rgb(203, 236, 255);
+        box-shadow: 10px;
+        padding: 10px;
+        transition: 0.3s;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px;
+    }
+    
+    .listimgitem img {
+        width:40px;
+        float: left;
+        margin-right: 8px;
+    }
+    
+    .listcontaineritem {
+        width: 95%;
+        margin-bottom: 15px;
+        border: black;
+        background-color: rgb(203, 236, 255);
+        box-shadow: 10px;
+        padding: 10px;
+        transition: 0.3s;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px;
+    }
+
+    .managerdocker {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imagemanager {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-family: "Raleway", "Sans-serif";
+        margin: 0;
+    }
+    
+    h1 {
+        padding: 10px;
+        font-weight: bold;
+    }
+    
+    .nav-head {
+        background-color: rgb(199, 235, 255);
+        padding: 0px 0px 0px 0px;
+        height: 90px;
+    }
+    
+    .main-card {
+        padding: 20px;
+        margin: 10px;
+        background-color: rgb(233, 245, 252);
+    }
+    
+    .card-button {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn {
+        padding: 5px;
+        margin-right: 10px;
+        background-color: rgb(132, 208, 252);
+        border:none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    .btnitems {
+        padding: 7px;
+        background-color: rgb(44, 178, 255);
+        width: 90px;
+        border: none;
+        margin-top: 7px;
+        cursor: pointer;
+        border-radius: 3px;
+        margin-left: 5px;
+    }
+    
+    .navlist {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0px 0px 0px 15px;
+    }
+    
+    .inputStyle {
+        height: 55px;
+        width: 90px;
+        margin-left: 5px;
+        border: none;
+        text-align: center;
+    }
+    
+    .imglist {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listimgitem {
+        width: 95%;
+        margin-bottom: 15px;
+        border: black;
+        background-color: rgb(203, 236, 255);
+        box-shadow: 10px;
+        padding: 10px;
+        transition: 0.3s;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px;
+    }
+    
+    .listimgitem img {
+        width:40px;
+        float: left;
+        margin-right: 8px;
+    }
+    
+    .listcontaineritem {
+        width: 95%;
+        margin-bottom: 15px;
+        border: black;
+        background-color: rgb(203, 236, 255);
+        box-shadow: 10px;
+        padding: 10px;
+        transition: 0.3s;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px;
+    }
+}
