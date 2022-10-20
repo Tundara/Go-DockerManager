@@ -9,11 +9,11 @@ import (
 //PORT is the variable who contain port of Gin
 const PORT string = "1337"
 
-//GottyURL is the variable who contain gotty url
-const GottyURL string = "http://localhost"
-
 //GottyPORT is the variable who contain gotty port
 const GottyPORT string = "8181"
+
+//GottyURL is the variable who contain gotty url
+const GottyURL string = "http://localhost:" + GottyPORT
 
 //GetCtx is the functions for init the context
 func GetCtx() context.Context {
