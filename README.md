@@ -4,4 +4,4 @@
 ![alt text](img/Screenshot_34.png)
 
 #### part of personal projects
-#### allowed during work time @datamixio
+#### allowed during work time @[datamixio](@datamixio)
