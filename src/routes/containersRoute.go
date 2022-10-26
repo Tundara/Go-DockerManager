@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-//Avatar is the struct to put json output
+// Avatar is the struct to put json output
 type Avatar struct {
 	Img string `json:"gravatar_url"`
 }
@@ -74,7 +74,7 @@ func OpenContainerInATermFromRoute(c *gin.Context) {
 	}
 }
 
-//DeleteContainerFromRoute is the function for delete all containers from the route
+// DeleteContainerFromRoute is the function for delete all containers from the route
 func DeleteContainerFromRoute(c *gin.Context) {
 	id := c.Param("id")
 	err := utils.DeleteContainer(env.GetCtx(), env.GetCli(), id)
@@ -89,7 +89,7 @@ func DeleteContainerFromRoute(c *gin.Context) {
 	}
 }
 
-//GetImageAvatarByNameFromRoute is the function for get an avatar from orgs of a docker image
+// GetImageAvatarByNameFromRoute is the function for get an avatar from orgs of a docker image
 func GetImageAvatarByNameFromRoute(c *gin.Context) {
 	name := c.Param("name")
 	resp, err := utils.GetImageAvatarByName(env.GetCtx(), env.GetCli(), name)

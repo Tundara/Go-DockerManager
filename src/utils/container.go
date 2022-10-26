@@ -46,6 +46,12 @@ func ListAllContainers(ctx context.Context, cli *client.Client) ([]types.Contain
 		err := errors.New("Nope")
 		return listoutSec, err
 	}
+	/*
+		for _, container := range listoutSec {
+			fmt.Printf("%s %s\n", container.ID[:10], container.Image)
+		}
+		return listoutSec, nil
+	*/
 	return listoutSec, nil
 }
 
