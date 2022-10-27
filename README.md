@@ -1,5 +1,8 @@
 # Go-DockerManager
 #### Easily manage your docker containers
+##### ✅ Linux Support
+##### ❌ Windows Support
+
 ## Docker on the Web !
 ![alt text](img/panel.png)
 
