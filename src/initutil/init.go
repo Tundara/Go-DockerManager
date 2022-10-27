@@ -2,9 +2,9 @@ package initutil
 
 import (
 	"context"
+	"dockman/src/env"
+	"dockman/src/routes"
 	"log"
-	"pmdocker/src/env"
-	"pmdocker/src/routes"
 
 	"github.com/docker/docker/client"
 	"github.com/gin-gonic/gin"

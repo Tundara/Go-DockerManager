@@ -2,6 +2,7 @@ package utils
 
 import (
 	"os"
+	"runtime"
 
 	"github.com/docker/docker/client"
 )
@@ -22,5 +23,13 @@ func CheckRoot() bool {
 		return false
 	}
 	os.Remove(file)
+	return true
+}
+
+// CheckIfLinux is the function for check if the user is on linux
+func CheckIfLinux() bool {
+	if runtime.GOOS == "windows" {
+		return false
+	}
 	return true
 }

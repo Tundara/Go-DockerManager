@@ -1,11 +1,11 @@
 package routes
 
 import (
+	"dockman/src/env"
+	"dockman/src/utils"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"pmdocker/src/env"
-	"pmdocker/src/utils"
 
 	"github.com/gin-gonic/gin"
 )

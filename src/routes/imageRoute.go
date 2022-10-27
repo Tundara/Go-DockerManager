@@ -1,16 +1,16 @@
 package routes
 
 import (
+	"dockman/src/env"
+	"dockman/src/utils"
 	"io"
 	"net/http"
 	"os"
-	"pmdocker/src/env"
-	"pmdocker/src/utils"
 
 	"github.com/gin-gonic/gin"
 )
 
-//DeleteAllImagesFromRoute is the function for delete all docker images from routes
+// DeleteAllImagesFromRoute is the function for delete all docker images from routes
 func DeleteAllImagesFromRoute(c *gin.Context) {
 	resp, err := utils.DeleteAllImages(env.GetCtx(), env.GetCli())
 	if err != nil {
@@ -24,7 +24,7 @@ func DeleteAllImagesFromRoute(c *gin.Context) {
 	}
 }
 
-//ListAllImagesFromRoute is a function for list all docker images installed
+// ListAllImagesFromRoute is a function for list all docker images installed
 func ListAllImagesFromRoute(c *gin.Context) {
 	list, err := utils.ListAllImages(env.GetCtx(), env.GetCli())
 	if err != nil {
@@ -39,7 +39,7 @@ func ListAllImagesFromRoute(c *gin.Context) {
 
 }
 
-//PullImageFromRoute is the function for pull a docker image from route
+// PullImageFromRoute is the function for pull a docker image from route
 func PullImageFromRoute(c *gin.Context) {
 	repo := c.Param("repo")
 	name := c.Param("name")
@@ -52,7 +52,7 @@ func PullImageFromRoute(c *gin.Context) {
 	io.Copy(os.Stdout, reader)
 }
 
-//DeleteImageFromRoute is the function for delete a docker image from route
+// DeleteImageFromRoute is the function for delete a docker image from route
 func DeleteImageFromRoute(c *gin.Context) {
 	id := c.Param("id")
 	_, err := utils.DeleteImage(env.GetCtx(), env.GetCli(), id)

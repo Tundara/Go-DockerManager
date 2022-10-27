@@ -1,15 +1,18 @@
 package main
 
 import (
+	"dockman/src/env"
+	"dockman/src/initutil"
+	"dockman/src/utils"
 	"fmt"
 	"log"
 	"os"
-	"pmdocker/src/env"
-	"pmdocker/src/initutil"
-	"pmdocker/src/utils"
 )
 
 func init() {
+	if !utils.CheckIfLinux() {
+		log.Fatalln("DockerManager are not compatible for Windows at this time")
+	}
 	if !utils.CheckRoot() {
 		log.Fatalln("You are not Root")
 	}

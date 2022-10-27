@@ -1,8 +1,8 @@
 package utils
 
 import (
+	"dockman/src/env"
 	os "os/exec"
-	"pmdocker/src/env"
 	"syscall"
 
 	"github.com/pbar1/pkill-go"
